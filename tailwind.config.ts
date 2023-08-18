@@ -8,10 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+		colors: {
+			gold: '#dabe70',
+			'luxury-black': "#191a1a"
+		},
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-radial-bg': 'rgb(255,226,112)',
+        'gradient-radial': 'radial-gradient(circle, rgba(255,226,112,1) 0%, rgba(0,0,0,1) 50%)',
       },
     },
   },
