@@ -110,7 +110,9 @@ export default function Home() {
           APEX WATCH CLUB IS A GROUNDBREAKING VENTURE
         </h1>
         <img className="my-8" src="/line.svg" alt="Line Graphic" />
-        <p className={`max-w-[600px] text-center ${readexPro.className}`}>
+        <p
+          className={`max-w-[600px] text-white text-center ${readexPro.className}`}
+        >
           that fuses the timeless allure of luxury watch collecting with the
           innovative world of NFTs and cryptocurrency
         </p>
@@ -121,7 +123,9 @@ export default function Home() {
         <h1 className="text-4xl text-center max-w-[600px] text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
           OUR CLUB OFFERS AN EXCLUSIVE MEMBERSHIP
         </h1>
-        <p className={`max-w-[600px] text-center mb-16 ${readexPro.className}`}>
+        <p
+          className={`max-w-[600px] text-center text-white mb-16 ${readexPro.className}`}
+        >
           accessible only through our uniquely minted NFTs, which serves as a
           passport to a realm of unparalleled benefits and privileges in the
           world of horology.
@@ -143,7 +147,7 @@ export default function Home() {
               </h1>
               <img className="mt-2 mb-8" src="/line2.png" alt="Line Graphic" />
 
-              <p className={`text-[14px] ${readexPro.className}`}>
+              <p className={`text-[14px] text-white ${readexPro.className}`}>
                 Every month, members stand a chance to win iconic timepieces
                 from revered brands such as Rolex, Audemars Piguet, Patek
                 Philippe, and more. These aren’t just watches; they are
@@ -165,7 +169,7 @@ export default function Home() {
               </h1>
               <img className="mt-2 mb-8" src="/line2.png" alt="Line Graphic" />
 
-              <p className={`text-[14px] ${readexPro.className}`}>
+              <p className={`text-[14px] ${readexPro.className} text-white`}>
                 Members have the privilege to purchase watches at prices that
                 are unheard of in the traditional market. Whether you’re looking
                 to expand your personal collection or capitalize on the
@@ -196,7 +200,7 @@ export default function Home() {
               </h1>
               <img className="mt-2 mb-8" src="/line2.png" alt="Line Graphic" />
 
-              <p className={`text-[14px] ${readexPro.className}`}>
+              <p className={`text-[14px] text-white ${readexPro.className}`}>
                 In a world’s first, members can securely vault their physical
                 watches with us and receive an NFT representation of their
                 prized possession. This NFT can be traded, sold, or showcased in
@@ -221,7 +225,7 @@ export default function Home() {
               </h1>
               <img className="mt-2 mb-8" src="/line2.png" alt="Line Graphic" />
 
-              <p className={`text-[14px] ${readexPro.className}`}>
+              <p className={`text-[14px] text-white ${readexPro.className}`}>
                 Members gain exclusive entry to a private Discord community, a
                 hub for networking with other watch aficionados. This platform
                 will host watch experts, influencers, and enthusiasts, offering
@@ -235,7 +239,9 @@ export default function Home() {
 
       {/*SECTION: WATCH SHOWCASE*/}
       <section className="flex flex-col items-center m-16">
-        <h2 className={readexPro.className}>FEATURED PRODUCTS</h2>
+        <h2 className={`text-white ${readexPro.className}`}>
+          FEATURED PRODUCTS
+        </h2>
         <h1 className="text-4xl text-center max-w-[600px] text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
           WATCH SHOWCASE
         </h1>
@@ -250,7 +256,7 @@ export default function Home() {
               <h1 className="text-[24px] max-w-[600px] text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
                 {e.name}
               </h1>
-              <p>{e.company}</p>
+              <p className="text-gray">{e.company}</p>
             </div>
           ))}
         </div>
