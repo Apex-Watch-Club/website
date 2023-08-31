@@ -2,11 +2,17 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { EB_Garamond } from "next/font/google";
 
-const ebGaramond= EB_Garamond({ subsets: ["latin"] });
+const ebGaramond = EB_Garamond({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Apex Watch Club",
   description: "The Future of Luxury Watch Ownership and Trading",
+  openGraph: {
+    title: "Apex Watch Club",
+    description: "The Future of Luxury Watch Ownership and Trading",
+    url: "https://www.apexwatchclub.com/",
+    images: "",
+  },
 };
 
 export default function RootLayout({
