@@ -13,6 +13,13 @@ export const metadata: Metadata = {
     url: "https://www.apexwatchclub.com/",
     images: "",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Apex Watch Club",
+    description: "The Future of Luxury Watch Ownership and Trading",
+    creator: "Apex Watch Club",
+    images: [""],
+  },
 };
 
 export default function RootLayout({

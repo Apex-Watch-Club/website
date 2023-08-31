@@ -76,7 +76,7 @@ const SOCIALS = [
 
 export default function Home() {
   return (
-    <main className="w-screen">
+    <main className="w-screen bg-black">
       {/* SECTION: HEADER */}
       <section className="w-full bg-gradient-to-right from-dark-gold to-light-gold">
         <div className="w-full items-center flex justify-center flex-col absolute">
