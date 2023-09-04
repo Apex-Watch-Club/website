@@ -131,9 +131,9 @@ export default function Home() {
           world of horology.
         </p>
 
-        <div className="w-full flex items-center max-w-[800px] justify-between">
-          <img src="/vip.png" alt="VIP Pass" />
-          <img src="/regular.png" alt="Regular Pass" />
+        <div className="w-full flex justify-center items-center max-w-[800px] gap-16">
+          <img className="w-[400px]" src="/vip.png" alt="VIP Pass" />
+          <img className="w-[400px]" src="/regular.png" alt="Regular Pass" />
         </div>
       </section>
 
@@ -183,9 +183,17 @@ export default function Home() {
 
       {/*SECTION: CATCHY LINE*/}
       <section className="bg-rolex bg-center h-[600px]">
-        <div className="bg-dim border-dark-gold border-y-2 h-full flex items-center justify-center bg-center">
+        <div className="bg-dim border-dark-gold border-y-2 h-full flex flex-col items-center justify-center bg-center">
+          <div className="flex justify-between mb-8 gap-8">
+            <img className="w-24" src="/vispx_white.png" alt="VISPX" />
+            <img
+              className="w-24"
+              src="/hourglass_white.png"
+              alt="Hourglass Collective"
+            />
+          </div>
           <h1 className="text-4xl text-center max-w-[600px] mb-8 text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
-            ANOTHER CATCHY LINE
+            Co-Incubated by VISPX and Hourglass Collective
           </h1>
         </div>
       </section>
@@ -262,17 +270,79 @@ export default function Home() {
         </div>
       </section>
 
-      {/*SECTION: BENEFITS
-
-      <section className="flex flex-col items-center m-16">
+      {/*SECTION: BENEFITS*/}
+      <section className="hidden md:flex flex-col items-center mx-16 my-32">
         <h2 className={readexPro.className}>KEY BENEFITS</h2>
         <h1 className="text-4xl text-center max-w-[600px] text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
           BENEFIT HEADER
         </h1>
         <img className="my-8" src="/line.svg" alt="Line Graphic" />
-        <div></div>
+
+        <div className="grid grid-cols-3 w-full">
+          <aside className="flex flex-col gap-32">
+            <div className="flex items-start gap-4">
+              <img className="w-16" src="/innovation.svg" alt="Innovation" />
+              <div>
+                <h1 className="text-3xl text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
+                  INNOVATION
+                </h1>
+                <p>
+                  We’re not just a club; we’re a movement. By integrating NFT’s
+                  and cryptocurrency into the luxury watch market, we’re
+                  pioneering a new era of ownership and trading.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <img className="w-16" src="/exclusivity.svg" alt="Exclusivity" />
+              <div>
+                <h1 className="text-3xl text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
+                  EXCLUSIVITY
+                </h1>
+                <p>
+                  With limited memberships available, the demand for our club’s
+                  benefits and privileges ensures a high value for our NFTs and
+                  a dedicated, passionate community.
+                </p>
+              </div>
+            </div>
+          </aside>
+
+          <img src="/watch4.png" alt="Watch 4" />
+
+          <aside className="flex flex-col gap-32">
+            <div className="flex items-start gap-4">
+              <img className="w-16" src="/security.svg" alt="Security" />
+              <div>
+                <h1 className="text-3xl text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
+                  SECURITY
+                </h1>
+                <p>
+                  Our state-of-the-art vaulting system guarantees the safety of
+                  physical assets, while the blockchain ensures the authenticity
+                  and provenance of every watch-NFT.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <img className="w-16" src="/growth.svg" alt="Growth Potential" />
+              <div>
+                <h1 className="text-3xl text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
+                  GROWTH POTENTIAL
+                </h1>
+                <p>
+                  The luxury watch market has consistently shown resilience and
+                  appreciation over time. By introducing a novel approach to
+                  buying, selling, and travelling, we’re poised to capture a
+                  significant share of this lucrative market.
+                </p>
+              </div>
+            </div>
+          </aside>
+        </div>
       </section>
-      */}
 
       {/*SECTION: CTA*/}
       <section className="bg-patek bg-center h-[600px]">
