@@ -8,19 +8,16 @@ const readexPro = Readex_Pro({ weight: "200", subsets: ["latin"] });
 
 const FEATURED_WATCHES = [
   {
-    name: "5167R_001",
-    company: "Patek Philippe",
-    path: "/watch1.png",
+    name: "Patek Philippe",
+    path: "/patek_philippe.png",
   },
   {
-    name: "336933wio",
-    company: "Rolex",
-    path: "/watch2.png",
+    name: "Audemars",
+    path: "/audemars.png",
   },
   {
-    name: "5905R_001",
-    company: "Patek Philippe",
-    path: "/watch3.png",
+    name: "Rolex",
+    path: "/rolex.png",
   },
 ];
 
@@ -264,7 +261,6 @@ export default function Home() {
               <h1 className="text-[24px] max-w-[600px] text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
                 {e.name}
               </h1>
-              <p className="text-gray">{e.company}</p>
             </div>
           ))}
         </div>
