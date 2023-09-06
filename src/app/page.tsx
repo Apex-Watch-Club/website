@@ -182,9 +182,9 @@ export default function Home() {
       <section className="bg-rolex bg-center h-[600px]">
         <div className="bg-dim border-dark-gold border-y-2 h-full flex flex-col items-center justify-center bg-center">
           <div className="flex justify-between mb-8 gap-8">
-            <img className="w-24" src="/vispx_white.png" alt="VISPX" />
+            <img className="h-24" src="/vispx_white.png" alt="VISPX" />
             <img
-              className="w-24"
+              className="h-24"
               src="/hourglass_white.png"
               alt="Hourglass Collective"
             />
