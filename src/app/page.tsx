@@ -130,7 +130,7 @@ export default function Home() {
           world of horology.
         </p>
 
-        <div className="w-full flex flex-wrap justify-center items-center max-w-[800px] gap-16">
+        <div className="w-full flex flex-col lg:flex-row justify-center items-center max-w-[800px] gap-16">
           <img className="w-[400px]" src="/vip.png" alt="VIP Pass" />
           <img className="w-[400px]" src="/regular.png" alt="Regular Pass" />
         </div>
