@@ -276,7 +276,7 @@ export default function Home() {
       <section className="text-white hidden md:flex flex-col items-center mx-16 my-32">
         <h2 className={readexPro.className}>KEY BENEFITS</h2>
         <h1 className="text-4xl text-center max-w-[600px] text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
-          LUXURY AT YOUR WRIST
+          WATCH ELITES BELONG HERE
         </h1>
         <img className="my-8" src="/line.svg" alt="Line Graphic" />
 
