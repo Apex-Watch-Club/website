@@ -78,7 +78,7 @@ export default function Home() {
     <main className="w-screen bg-black">
       {/* SECTION: HEADER */}
       <section className="overflow-hidden w-full flex justify-center bg-gradient-to-right from-dark-gold to-light-gold">
-        <div className="w-full overflow-hidden items-center flex justify-center flex-col absolute">
+        <div className="w-full overflow-hidden items-center flex justify-center flex-col absolute p-8">
           <nav className="w-full px-8 py-24 items-center justify-center flex flex-col">
             <img
               className="w-full max-w-[139px] h-auto"
@@ -130,9 +130,13 @@ export default function Home() {
           world of horology.
         </p>
 
-        <div className="w-full flex flex-col lg:flex-row justify-center items-center max-w-[800px] gap-16">
-          <img className="w-[400px]" src="/vip.png" alt="VIP Pass" />
-          <img className="w-[400px]" src="/regular.png" alt="Regular Pass" />
+        <div className="w-full flex flex-col sm:flex-row justify-center items-center max-w-[800px] gap-16">
+          <img className="w-full max-w-[400px]" src="/vip.png" alt="VIP Pass" />
+          <img
+            className="w-full max-w-[400px]"
+            src="/regular.png"
+            alt="Regular Pass"
+          />
         </div>
       </section>
 
