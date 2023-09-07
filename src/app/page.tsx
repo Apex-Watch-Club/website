@@ -51,9 +51,10 @@ const KEY_BENEFITS = [
 const SOCIALS = [
   {
     name: "Twitter",
-    url: "/",
+    url: "https://twitter.com/apexwatchclub",
     path: "/twitter.svg",
   },
+  /*
   {
     name: "Instagram",
     url: "/",
@@ -69,14 +70,15 @@ const SOCIALS = [
     url: "/",
     path: "/telegram.svg",
   },
+   */
 ];
 
 export default function Home() {
   return (
     <main className="w-screen bg-black">
       {/* SECTION: HEADER */}
-      <section className="w-full bg-gradient-to-right from-dark-gold to-light-gold">
-        <div className="w-full items-center flex justify-center flex-col absolute">
+      <section className="overflow-hidden w-full flex justify-center bg-gradient-to-right from-dark-gold to-light-gold">
+        <div className="w-full overflow-hidden items-center flex justify-center flex-col absolute">
           <nav className="w-full px-8 py-24 items-center justify-center flex flex-col">
             <img
               className="w-full max-w-[139px] h-auto"
@@ -84,7 +86,7 @@ export default function Home() {
               alt="Apex Watch Club Logo"
             />
           </nav>
-          <h1 className="text-4xl text-center max-w-[600px] mb-8 text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
+          <h1 className="text-2xl md:text-4xl mx-4 text-center max-w-[600px] mb-8 text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
             THE FUTURE OF LUXURY WATCH OWNERSHIP AND TRADING
           </h1>
           <button
@@ -95,7 +97,7 @@ export default function Home() {
         </div>
 
         <img
-          className="w-full h-auto"
+          className="w-full min-w-[600px] h-auto"
           src="/hero_desktop.jpg"
           alt="Hero Watch"
         />
@@ -103,7 +105,7 @@ export default function Home() {
 
       {/*SECTION: LUXURY BLACK*/}
       <section className="flex flex-col items-center bg-luxury-black px-4 py-32 border-dark-gold border-y-2">
-        <h1 className="text-4xl text-center max-w-[600px] text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
+        <h1 className="text-2xl md:text-4xl text-center max-w-[600px] text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
           APEX WATCH CLUB IS A GROUNDBREAKING VENTURE
         </h1>
         <img className="my-8" src="/line.svg" alt="Line Graphic" />
@@ -117,7 +119,7 @@ export default function Home() {
 
       {/*SECTION: OFFERING*/}
       <section className="flex flex-col items-center px-4 py-16 border-dark-gold border-b-2">
-        <h1 className="text-4xl text-center max-w-[600px] text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
+        <h1 className="text-2xl md:text-4xl text-center max-w-[600px] text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
           OUR CLUB OFFERS AN EXCLUSIVE MEMBERSHIP
         </h1>
         <p
@@ -128,27 +130,28 @@ export default function Home() {
           world of horology.
         </p>
 
-        <div className="w-full flex justify-center items-center max-w-[800px] gap-16">
+        <div className="w-full flex flex-wrap justify-center items-center max-w-[800px] gap-16">
           <img className="w-[400px]" src="/vip.png" alt="VIP Pass" />
           <img className="w-[400px]" src="/regular.png" alt="Regular Pass" />
         </div>
       </section>
 
       {/*SECTION: GIVEAWAY*/}
-      <section className="m-16">
+      <section className="p-8">
         <div className="w-full flex justify-center">
-          <div className="w-full flex justify-between items-center max-w-[900px]">
+          <div className="w-full flex md:flex-row flex-col justify-between items-center max-w-[900px]">
             <aside className="max-w-[400px]">
               <h1 className="text-[24px] max-w-[600px] text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
-                MONTHLY GIVEAWAYS
+                PURCHASE OPPORTUNITIES
               </h1>
               <img className="mt-2 mb-8" src="/line2.png" alt="Line Graphic" />
 
               <p className={`text-[14px] text-white ${readexPro.className}`}>
-                Every month, members stand a chance to win iconic timepieces
-                from revered brands such as Rolex, Audemars Piguet, Patek
-                Philippe, and more. These aren’t just watches; they are
-                legacies, stories, and art pieces that appreciate over time.
+                Members have the privilege to purchase watches at prices that
+                are unheard of in the traditional market. Whether you’re looking
+                to expand your personal collection or capitalize on the
+                opportunity to sell to other enthusiasts, the potential for
+                profit and pleasure is immense.
               </p>
             </aside>
 
@@ -157,21 +160,20 @@ export default function Home() {
         </div>
 
         <div className="w-full flex justify-center">
-          <div className="w-full flex justify-between items-center max-w-[900px]">
+          <div className="w-full flex md:flex-row flex-col flex-col-reverse justify-between items-center max-w-[900px]">
             <img src="/image_2.png" alt="Watch Giveaway" />
 
             <aside className="max-w-[400px]">
               <h1 className="text-[24px] max-w-[600px] text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
-                EXCLUSIVE PURCHASE OPPORTUNITIES
+                GIVEAWAYS
               </h1>
               <img className="mt-2 mb-8" src="/line2.png" alt="Line Graphic" />
 
               <p className={`text-[14px] ${readexPro.className} text-white`}>
-                Members have the privilege to purchase watches at prices that
-                are unheard of in the traditional market. Whether you’re looking
-                to expand your personal collection or capitalize on the
-                opportunity to sell to other enthusiasts, the potential for
-                profit and pleasure is immense.
+                Every month, members stand a chance to win iconic timepieces
+                from revered brands such as Rolex, Audemars Piguet, Patek
+                Philippe, and more. These aren’t just watches; they are
+                legacies, stories, and art pieces that appreciate over time.
               </p>
             </aside>
           </div>
@@ -180,25 +182,25 @@ export default function Home() {
 
       {/*SECTION: CATCHY LINE*/}
       <section className="bg-rolex bg-center h-[600px]">
-        <div className="bg-dim border-dark-gold border-y-2 h-full flex flex-col items-center justify-center bg-center">
+        <div className="bg-dim border-dark-gold p-8 border-y-2 h-full flex flex-col items-center justify-center bg-center">
           <div className="flex justify-between mb-8 gap-8">
-            <img className="h-24" src="/vispx_white.png" alt="VISPX" />
+            <img className="h-12 md:h-24" src="/vispx_white.png" alt="VISPX" />
             <img
-              className="h-24"
+              className="h-12 md:h-24"
               src="/hourglass_white.png"
               alt="Hourglass Collective"
             />
           </div>
-          <h1 className="text-4xl text-center max-w-[600px] mb-8 text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
+          <h1 className="text-2xl md:text-4xl text-center max-w-[600px] mb-8 text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
             Co-Incubated by VISPX and Hourglass Collective
           </h1>
         </div>
       </section>
 
       {/*SECTION: PERKS*/}
-      <section className="m-16">
+      <section className="p-8">
         <div className="w-full flex justify-center">
-          <div className="w-full flex justify-between items-center max-w-[900px]">
+          <div className="w-full flex md:flex-row flex-col justify-between items-center max-w-[900px]">
             <aside className="max-w-[400px]">
               <h1 className="text-[24px] max-w-[600px] text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
                 NFT VAULTING
@@ -221,7 +223,7 @@ export default function Home() {
         </div>
 
         <div className="w-full flex justify-center">
-          <div className="w-full flex justify-between items-center max-w-[900px]">
+          <div className="w-full flex md:flex-row flex-col flex-col-reverse justify-between items-center max-w-[900px]">
             <img src="/image_4.png" alt="Watch Giveaway" />
 
             <aside className="max-w-[400px]">
@@ -243,7 +245,7 @@ export default function Home() {
       </section>
 
       {/*SECTION: WATCH SHOWCASE*/}
-      <section className="flex flex-col items-center m-16">
+      <section className="flex flex-col items-center p-8">
         <h2 className={`text-white ${readexPro.className}`}>
           FEATURED PRODUCTS
         </h2>
@@ -251,11 +253,11 @@ export default function Home() {
           WATCH SHOWCASE
         </h1>
         <img className="my-8" src="/line.svg" alt="Line Graphic" />
-        <div className="grid grid-cols-3 gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
           {FEATURED_WATCHES.map((e, idx) => (
             <div
               key={idx}
-              className="flex flex-col items-center py-6 px-12 text-center border-gold border-2 rounded-xl bg-dim-gold"
+              className="max-w-[300px] flex flex-col items-center py-6 px-12 text-center border-gold border-2 rounded-xl bg-dim-gold"
             >
               <img src={e.path} alt={e.name} />
               <h1 className="text-[24px] max-w-[600px] text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
@@ -270,7 +272,7 @@ export default function Home() {
       <section className="text-white hidden md:flex flex-col items-center mx-16 my-32">
         <h2 className={readexPro.className}>KEY BENEFITS</h2>
         <h1 className="text-4xl text-center max-w-[600px] text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
-          BENEFIT HEADER
+          LUXURY AT YOUR WRIST
         </h1>
         <img className="my-8" src="/line.svg" alt="Line Graphic" />
 
@@ -279,7 +281,7 @@ export default function Home() {
             <div className="flex items-start gap-4">
               <img className="w-16" src="/innovation.svg" alt="Innovation" />
               <div>
-                <h1 className="text-3xl text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
+                <h1 className="text-2xl text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
                   INNOVATION
                 </h1>
                 <p>
@@ -293,7 +295,7 @@ export default function Home() {
             <div className="flex items-start gap-4">
               <img className="w-16" src="/exclusivity.svg" alt="Exclusivity" />
               <div>
-                <h1 className="text-3xl text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
+                <h1 className="text-2xl text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
                   EXCLUSIVITY
                 </h1>
                 <p>
@@ -311,7 +313,7 @@ export default function Home() {
             <div className="flex items-start gap-4">
               <img className="w-16" src="/security.svg" alt="Security" />
               <div>
-                <h1 className="text-3xl text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
+                <h1 className="text-2xl text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
                   SECURITY
                 </h1>
                 <p>
@@ -325,7 +327,7 @@ export default function Home() {
             <div className="flex items-start gap-4">
               <img className="w-16" src="/growth.svg" alt="Growth Potential" />
               <div>
-                <h1 className="text-3xl text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
+                <h1 className="text-2xl text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
                   GROWTH POTENTIAL
                 </h1>
                 <p>
@@ -342,8 +344,8 @@ export default function Home() {
 
       {/*SECTION: CTA*/}
       <section className="bg-patek bg-center h-[600px]">
-        <div className="bg-dim border-dark-gold border-y-2 h-full flex flex-col items-center justify-center bg-center">
-          <h1 className="text-4xl text-center max-w-[600px] mb-8 text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
+        <div className="bg-dim border-dark-gold p-8 border-y-2 h-full flex flex-col items-center justify-center bg-center">
+          <h1 className="text-2xl md:text-4xl text-center max-w-[600px] mb-8 text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
             THE FUTURE OF LUXURY WATCH OWNERSHIP AND TRADING
           </h1>
           <button
@@ -354,7 +356,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="flex flex-col items-center p-32">
+      <footer className="h-[600px] flex flex-col items-center justify-center p-8">
         <img
           className="w-full max-w-[139px] h-auto"
           src="/logo.png"
@@ -367,7 +369,7 @@ export default function Home() {
             </a>
           ))}
         </div>
-        <p className="text-xs text-gray">
+        <p className="text-xs text-gray text-center">
           &copy; Apex Watch Club All Rights Reserved {new Date().getFullYear()}
         </p>
       </footer>
