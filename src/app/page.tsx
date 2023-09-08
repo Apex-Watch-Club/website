@@ -76,7 +76,7 @@ const SOCIALS = [
 export default function Home() {
   return (
     <main className="w-screen bg-black">
-      {/* SECTION: HEADER */}
+      {/* SECTION: HERO*/}
       <section className="overflow-hidden w-full flex justify-center bg-gradient-to-right from-dark-gold to-light-gold">
         <div className="w-full overflow-hidden items-center flex justify-center flex-col absolute p-8">
           <nav className="w-full px-8 py-24 items-center justify-center flex flex-col">
