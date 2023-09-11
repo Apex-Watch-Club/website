@@ -98,7 +98,7 @@ export default function Home() {
 
         <img
           className="w-full min-w-[600px] h-auto"
-          src="/hero_desktop.jpg"
+          src="/hero_reduced.jpg"
           alt="Hero Watch"
         />
       </section>
