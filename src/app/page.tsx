@@ -79,13 +79,14 @@ export default function Home() {
       {/* SECTION: HERO*/}
       <section className="overflow-hidden w-full flex justify-center bg-gradient-to-right from-dark-gold to-light-gold">
         <div className="w-full overflow-hidden items-center flex justify-center flex-col absolute p-8">
-          <nav className="w-full px-8 py-24 items-center justify-center flex flex-col">
+          <nav className="w-full px-8 py-24 items-center justify-center flex flex-col mb-[300px] xl:mb-[600px]">
             <img
               className="w-full max-w-[139px] h-auto"
               src="/logo.png"
               alt="Apex Watch Club Logo"
             />
           </nav>
+
           <h1 className="text-2xl md:text-4xl mx-4 text-center max-w-[600px] mb-8 text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
             THE FUTURE OF LUXURY WATCH OWNERSHIP AND TRADING
           </h1>
@@ -97,7 +98,7 @@ export default function Home() {
         </div>
 
         <img
-          className="w-full min-w-[600px] h-auto"
+          className="w-full min-w-[900px] h-auto"
           src="/hero_reduced.jpg"
           alt="Hero Watch"
         />
