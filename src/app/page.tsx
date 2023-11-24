@@ -54,6 +54,11 @@ const SOCIALS = [
     url: "https://twitter.com/apexwatchclub",
     path: "/twitter.svg",
   },
+  {
+    name: "Discord",
+    url: "https://discord.gg/nGHN7uYd3B",
+    path: "/discord.svg",
+  },
   /*
   {
     name: "Instagram",
@@ -79,7 +84,7 @@ export default function Home() {
       {/* SECTION: HERO*/}
       <section className="overflow-hidden w-full flex justify-center bg-gradient-to-right from-dark-gold to-light-gold">
         <div className="w-full overflow-hidden items-center flex justify-center flex-col absolute p-8">
-          <nav className="w-full px-8 py-24 items-center justify-center flex flex-col mb-[300px] xl:mb-[600px]">
+          <nav className="w-full px-8 py-24 items-center justify-center flex flex-col mb-[50px] lg:mb-[100px]">
             <img
               className="w-full max-w-[139px] h-auto"
               src="/logo.png"
@@ -99,7 +104,7 @@ export default function Home() {
 
         <img
           className="w-full min-w-[900px] h-auto"
-          src="/hero_reduced.jpg"
+          src="/watch.jpg"
           alt="Hero Watch"
         />
       </section>
