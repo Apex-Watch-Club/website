@@ -194,7 +194,6 @@ export default function Home() {
       <section className="bg-rolex bg-center h-[600px]">
         <div className="bg-dim border-dark-gold p-8 border-y-2 h-full flex flex-col items-center justify-center bg-center">
           <div className="flex justify-between mb-8 gap-8">
-            <img className="h-12 md:h-24" src="/vispx_white.png" alt="VISPX" />
             <img
               className="h-12 md:h-24"
               src="/hourglass_white.png"
@@ -202,7 +201,7 @@ export default function Home() {
             />
           </div>
           <h1 className="text-2xl md:text-4xl text-center max-w-[600px] mb-8 text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
-            Co-Incubated by VISPX and Hourglass Collective
+            Co-Incubated by Hourglass Collective
           </h1>
         </div>
       </section>
