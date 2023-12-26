@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { Roboto_Slab, Readex_Pro } from "next/font/google";
 
@@ -95,11 +96,13 @@ export default function Home() {
           <h1 className="text-2xl md:text-4xl mx-4 text-center max-w-[600px] mb-8 text-transparent bg-gradient-to-r from-dark-gold to-light-gold bg-clip-text">
             THE FUTURE OF LUXURY WATCH OWNERSHIP AND TRADING
           </h1>
-          <button
-            className={`bg-gradient-to-r text-black from-dark-gold to-light-gold px-16 py-4 rounded-sm ${robotoSlab.className}`}
-          >
-            MINT COMING SOON
-          </button>
+          <Link href="https://pledge.apexwatchclub.com/">
+            <button
+              className={`bg-gradient-to-r text-black from-dark-gold to-light-gold px-16 py-4 rounded-sm ${robotoSlab.className}`}
+            >
+              MINT NOW
+            </button>
+          </Link>
         </div>
 
         <img
